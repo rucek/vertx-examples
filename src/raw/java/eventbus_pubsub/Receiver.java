@@ -24,7 +24,7 @@ import org.vertx.java.platform.Verticle;
 public class Receiver extends Verticle {
 
   public void start() {
-    vertx.eventBus().registerHandler("news-feed", new Handler<Message<String>>() {
+    vertx.eventBus().registerHandler("news-feed2", new Handler<Message<String>>() {
       @Override
       public void handle(Message<String> message) {
         System.out.println("Received news: " + message.body());
